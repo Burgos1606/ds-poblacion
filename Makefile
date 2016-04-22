@@ -1,4 +1,4 @@
-all: country_level provinces_level autonomies_level
+all: country_level provinces_level autonomies_level municipalities_level
 
 dep:
 	cd scripts; bundle install; cd ..;
@@ -11,4 +11,7 @@ provinces_level: dep
 
 autonomies_level: dep
 	cd scripts; ruby autonomies_level.rb; cd ..;
+
+municipalities_level: dep
+	cd scripts; ruby municipalities_level.rb; cd ..;
 
