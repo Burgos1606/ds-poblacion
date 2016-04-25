@@ -1,0 +1,162 @@
+{
+    "name": "ds-poblacion",
+    "title": "Datos de población",
+    "description": "Datos históricos de población de comunidades autónomas, municipios y provincias de España",
+    "licenses" : [
+	{
+	    "type": "odc-pddl",
+	    "url": "http://opendatacommons.org/licenses/pddl/"
+	}
+    ],
+    "author": {
+	"name": "Code for Spain",
+	"web": "http://www.codeforspain.org"
+    },
+    "keywords": [
+	"Población",
+	"Municipios",
+	"Provincias",
+	"Comunidades Autónomas"
+    ],
+    "version": "0.0.1",
+    "last_updated": "2016-04-25",
+    "resources": [
+	{
+	    "name": "poblacion-autonomias",
+	    "title": "Datos históricos de población por Autonomias",
+	    "description": "Datos históricos de población desde 1996",
+	    "schema": {
+		"fields": [
+		    {
+			"name": "year",
+			"description": "Año",
+			"type": "integer",
+			"format": "[0-9]{4}"
+		    },
+		    {
+			"name": "ine_code",
+			"title": "Código INE",
+			"description": "Código INE de la comunidad",
+			"type": "integer",
+			"format": "default"
+		    },
+		    {
+			"name": "name",
+			"type": "string",
+			"format": "default"
+		    },
+		    {
+			"name": "value",
+			"type": "integer",
+			"format": "default"
+		    }
+		]
+	    },
+	    "path": "data/poblacion-autonomias.csv",
+	    "format": "CSV",
+	    "mediatype": "text/csv",
+	    "bytes": 0
+	},
+	{
+	    "name": "poblacion-municipios",
+	    "title": "Datos históricos de población por municipios",
+	    "description": "Datos históricos de población desde 1996",
+	    "schema": {
+		"fields": [
+		    {
+			"name": "year",
+			"title": "Año",
+			"type": "integer",
+			"format": "[0-9]{4}"
+		    },
+		    {
+			"name": "ine_code",
+			"title": "Código INE",
+			"description": "Código INE de provincia/municipio",
+			"type": "integer",
+			"format": "[0-9]{5}"
+		    },
+		    {
+			"name": "name",
+			"title": "Nombre del municipio",
+			"type": "string",
+			"format": "default"
+		    },
+		    {
+			"name": "value",
+			"title": "Población",
+			"type": "integer",
+			"format": "default"
+		    }
+		]
+	    },
+	    "path": "data/poblacion-municipios.csv",
+	    "format": "CSV",
+	    "mediatype": "text/csv",
+	    "bytes": 0
+	},
+	{
+	    "name": "poblacion-provincias",
+	    "title": "Datos históricos de población por provincias",
+	    "description": "Datos históricos de población desde 1996",
+	    "schema": {
+		"fields": [
+		    {
+			"name": "year",
+			"title": "Año",
+			"type": "integer",
+			"format": "[0-9]{4}"
+		    },
+		    {
+			"name": "ine_code",
+			"title": "Código INE",
+			"description": "Código INE de provincia",
+			"type": "integer",
+			"format": "[0-9]{5}"
+		    },
+		    {
+			"name": "name",
+			"title": "Nombre de la provincia",
+			"type": "string",
+			"format": "default"
+		    },
+		    {
+			"name": "value",
+			"title": "Población",
+			"type": "integer",
+			"format": "default"
+		    }
+		]
+	    },
+	    "path": "data/poblacion-provincias.csv",
+	    "format": "CSV",
+	    "mediatype": "text/csv",
+	    "bytes": 0
+	},
+	{
+	    "name": "poblacion-pais",
+	    "title": "Datos históricos de población",
+	    "description": "Datos históricos de población desde 1999",
+	    "schema": {
+		"fields": [
+		    {
+			"name": "year",
+			"title": "Año",
+			"type": "integer",
+			"format": "[0-9]{4}"
+		    },
+		    {
+			"name": "value",
+			"title": "Población",
+			"type": "integer",
+			"format": "default"
+		    }
+		]
+	    },
+	    "path": "data/poblacion-pais.csv",
+	    "format": "CSV",
+	    "mediatype": "text/csv",
+	    "bytes": 0
+	}
+    ]
+}
