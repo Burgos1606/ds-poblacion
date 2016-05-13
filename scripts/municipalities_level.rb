@@ -51,7 +51,7 @@ data = {}
   url = "http://www.ine.es/jaxiT3/files/t/es/px/#{file_name}.px"
   file_path = download(url)
 
-  dataset = PCAxis::Dataset.new file_path
+  dataset = RubyPx::Dataset.new file_path
 
   # There are files in between the range without data
   next unless dataset.dimensions.include?('Periodo')

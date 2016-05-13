@@ -2,5 +2,5 @@ source "https://rubygems.org"
 
 gem "nokogiri"
 gem "ine-places"
-gem "ruby-px", require: "pc-axis/dataset"
+gem "ruby_px"
 gem "byebug"

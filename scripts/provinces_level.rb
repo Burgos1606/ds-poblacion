@@ -49,7 +49,7 @@ puts "Downloading provinces data..."
 
 file_path = download(URL)
 
-dataset = PCAxis::Dataset.new file_path
+dataset = RubyPx::Dataset.new file_path
 data = {}
 dataset.dimension('Periodo').each do |raw_year|
   year = raw_year.to_i
